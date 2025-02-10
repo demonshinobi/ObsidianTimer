@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
+      <h1>Timer</h1>
+      <img class="logo" src="icons/logo.png" alt="Logo" style="height: 24px; width: auto;" />
+    </div>
+    <div id="timerContainer">
+      <div id="timerDisplay">00:00:00</div>
+      <!-- First row: Start, Stop, Reset -->
+      <div class="button-group" style="display: flex; justify-content: center; gap: 10px; margin-top: 15px;">
+        <button id="start-timer-btn">Start</button>
+        <button id="stop-timer-btn">Stop</button>
+        <button id="reset-timer-btn">Reset</button>
+      </div>
+      <!-- Second row: Settings, Sessions, Export MD -->
+      <div class="button-group" style="display: flex; justify-content: center; gap: 10px; margin-top: 15px;">
+        <button id="settingsBtn">Settings</button>
+        <button id="sessionsBtn">Sessions</button>
+        <button id="export-md-btn">Export MD</button>
+      </div>
+    </div>
+    <div id="sessions" style="display: none;"></div>
+    <div id="settings" style="display: none;"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

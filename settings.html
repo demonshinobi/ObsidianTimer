@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="popup.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .setting-group {
+        margin-bottom: 20px;
+      }
+      label {
+        margin-right: 10px;
+      }
+      button {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Settings</h1>
+    <div class="setting-group">
+      <label for="continuousToggle">Continuous Timing:</label>
+      <input type="checkbox" id="continuousToggle" />
+      <span>(When enabled, after stopping the timer you will be prompted to name the next session.)</span>
+    </div>
+    <div class="setting-group">
+      <label for="themeToggle">Dark Mode:</label>
+      <input type="checkbox" id="themeToggle" />
+    </div>
+    <button id="saveSettings">Save Settings</button>
+    <script src="settings.js"></script>
+  </body>
+</html>
